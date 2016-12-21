@@ -1,0 +1,86 @@
+body {
+    font-family: 'Cabin', sans-serif;
+    font-size: 2em
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border: 1
+}
+
+table th.vaccio{
+    transition: all .5s;
+}
+
+table th.vaccio:hover{
+  border-style: solid;
+    
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;  
+}
+
+.rojo{
+    background-color: red
+}
+.verde{
+    background-color: springgreen
+}
+.marron{
+    background-color: burlywood
+}
+.beige{
+    background-color: beige
+}
+.amarillo{
+    background-color: yellow
+}
+.azul{
+    background-color: aqua;
+    
+}
+.brunito{
+    background-color: blue;
+    color: white
+}
+.rosaclaro{
+    background-color: pink
+}
+.rosafuerte{
+    background-color: deeppink
+}
+.rosaduro{
+    background-color: purple;
+    color: white
+}
+.bordeado{
+    border: 3px solid black
+}
+
+
+
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
